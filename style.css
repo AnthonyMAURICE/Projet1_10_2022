@@ -1,0 +1,279 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+h1{
+    font-family: "Crete Round", serif;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    color: #777;
+}
+
+/* header/navbar */
+
+.navbar{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 80px;
+}
+
+.mainTitle{
+    width: 50%;
+}
+
+.navbar a{
+    color: #444;
+    text-decoration: none;
+    font-size: small;
+    padding: 10px;
+}
+
+/*section 1*/
+
+#home{
+    margin-top: 80px;
+    display: flex;
+    overflow: hidden;
+    height: 600px;
+    max-height: 600px;
+    align-items: center;
+    justify-content: center;
+    scroll-margin-top: 80px;
+}
+
+.imageHome{
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+
+.centered {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centered2 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centered3 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+/* section 2 */
+
+#destinations{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    text-align: center;
+    scroll-margin-top: 80px;
+}
+
+.destWrapper{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px;
+    width: 320px;
+}
+
+/* section 3 */
+
+#circuits{
+    background-color: #ddd;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    padding: 0px 50px 60px 50px;
+    scroll-margin-top: 80px;
+}
+
+.circuitWrapper{
+    display: flex;
+    flex-flow: row;
+    overflow: hidden;
+    max-height: 270px;
+    max-width: 500px;
+    margin: 20px;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.circuitWrapper .text{
+    display: flex;
+    flex-flow: column;
+    width: 450px;
+    padding: 0px 15px 0px 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.circuitWrapper .text p{
+    font-size: smaller;
+    font-style: italic;
+    margin-top: 0%;
+}
+
+.circuitWrapper h3{
+    font-size: x-large;
+    padding-bottom: 20px;
+    margin-block-start: 0%;
+    align-self: flex-start;
+    border-bottom :2px dotted #ddd;
+}
+
+.circuitWrapper .circuitImage{
+    overflow: hidden;
+    width: 600px;
+}
+
+.circuitWrapper .circuitImage img{
+    float: right;
+}
+
+/* section 4 */
+
+#contact{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin : 50px;
+    padding-left: 75px;
+    padding-right: 75px;
+    scroll-margin-top: 80px;
+}
+
+#contact h2{
+    width: 400px;
+    border-bottom: 2px dotted #02b8dd;
+    padding: 20px;
+}
+
+.contactUs{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 50px;
+}
+
+#contact p{
+    margin: 0;
+    padding: 5px;
+}
+
+#contact input{
+    padding: 5px;
+}
+
+/* footer */
+
+footer{
+    background-color: #444;    
+    height: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer h1{
+    color: #ddd;
+}
+
+footer p{
+    text-align: center;
+    color: #777;
+}
+
+/* éléments autres */
+
+.point{
+    color: #ff7a00;
+}
+
+.orangeButton{
+    background-color: #ff7a00;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.blueButton{
+    background-color: #02b8dd;
+    padding: 7px 7px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.orangeButton:hover{
+    background-color: #02b8dd;
+}
+
+.blueButton:hover{
+    background-color: #ff7a00;
+}
+
+/* media querries */
+
+@media screen and (max-width: 1200px){   
+    /* général */
+    body p{
+        font-size: larger;
+    }
+
+    /* section 3 */
+    #circuits{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    .circuitWrapper{
+        max-height: 270px;
+    }
+    .circuitWrapper .text{
+        width: 450px;
+    }
+
+    .circuitWrapper .text p{
+        font-size: larger;
+    }
+
+    /* section 4 */
+    .contactUs{
+        display: flex;
+        flex-flow: column;
+        align-items: flex-end;
+    }
+    .contactUs p{
+        padding: 10px;
+    }
+    .contactButton{
+        align-self: center;
+    }
+}
